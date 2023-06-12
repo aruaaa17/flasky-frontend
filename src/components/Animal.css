@@ -1,0 +1,24 @@
+.Animal{
+    text-align: center;
+}
+
+img {
+    width: 250px;
+    animation: blink 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
