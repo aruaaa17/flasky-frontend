@@ -11,6 +11,13 @@ const AnimalList = () => {
             <Animal></Animal>
             <Animal></Animal>
             <Animal></Animal>
+            <ul className="AnimalList__list">
+                <li><Animal></Animal></li>
+                <li><Animal></Animal></li>
+                <li><Animal></Animal></li>
+                <li><Animal></Animal></li>
+                <li><Animal></Animal></li>
+            </ul>
         </section>
     )
 };
