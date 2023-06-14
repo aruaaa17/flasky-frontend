@@ -1,19 +1,23 @@
 import './Animal.css';
+import PropTypes from 'prop-types';
 
-// The responsibility of this component is to be a reusable UI element
-// - name
-// - species
-// - photo
-// - age
+// The responsibility of this component is to be a reusable UI element that displays an Animal's
 const Animal = (props) => {
 
-
     return (
-    <section className='Animal'>
-        <h3>Animal name: {props.name} uwu</h3>
-        <p>Species: {props.species}</p>
-        <img src="https://i.etsystatic.com/8213963/r/il/61131e/3746215281/il_fullxfull.3746215281_gdzt.jpg"></img>
+    <section className="Animal">
+        <h3>Name: { props.name } (cute!)</h3>
+        <p>Species: { props.species }</p>
+        { props.photo ? <img src={ props.photo } alt="Photo of Willow"></img> : "[No Photo]" }
     </section>);
 };
+
+Animal.propTypes = {
+    name: PropTypes.string,
+    species: PropTypes.string.isRequired,
+    adopted: PropTypes.bool,
+    age: PropTypes.number,
+    photo: PropTypes.string
+}
 
 export default Animal;
