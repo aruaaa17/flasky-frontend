@@ -2,6 +2,11 @@
     text-align: center;
 }
 
+.bookmarked {
+    background-color: rgb(251, 179, 179);
+    color: white;
+}
+
 img {
     width: 250px;
     animation: blink 3s;
